@@ -35,6 +35,6 @@ We start the server with the command "npm start"
 ### Work and distribution team
 
 ```
-- De Castro Gonzalo branch (providers)
-- Delmonte Lucas branch (products)
+- De Castro Gonzalo branch (clients and boilers)
+- Delmonte Lucas branch (technicians and maintenances)
 ```
