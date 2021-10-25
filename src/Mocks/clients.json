@@ -1,0 +1,40 @@
+{
+  "clients": [
+    {
+      "company": "Compañia Argentina System ",
+      "address": "Corrientes 1240",
+      "phone": "426332",
+      "boilerA": "4",
+      "email": "compañia@argentinasystem.com",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "company": "Airoldi",
+      "address": "Alsina 1542",
+      "phone": "4780552",
+      "boilerA": "3",
+      "email": "airoldi@repuestos.com",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "company": "Compañia Argentina System ",
+      "address": "Corrientes 1240",
+      "phone": "426332",
+      "boilerA": "4",
+      "email": "compañia@argentinasystem.com",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "company": "Airoldi",
+      "address": "Alsina 1542",
+      "phone": "4780552",
+      "boilerA": "3",
+      "email": "airoldi@repuestos.com",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}

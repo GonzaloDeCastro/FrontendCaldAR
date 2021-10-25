@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Layout from './Shared/Layout';
 import Maintenances from './Maintenances';
@@ -10,6 +9,7 @@ import Reports from './Reports';
 const Routes = () => {
   return (
     <Switch>
+      <Redirect exact push from='/' to='/maintenances' />
       <Route path='/maintenances'>
         <Layout>
           <Maintenances />
