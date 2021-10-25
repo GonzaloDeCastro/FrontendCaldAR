@@ -12,7 +12,6 @@ const Layout = ({ children }) => {
       <div className='dashboard'>
         <LeftNav />
         <Section container={children} />
-        <Section />
       </div>
       <Footer />
     </Fragment>
