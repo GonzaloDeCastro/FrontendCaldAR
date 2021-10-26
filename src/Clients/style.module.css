@@ -12,8 +12,6 @@ tr {
 td,
 th {
   padding: 5px 0px 5px 5px;
-  border: solid 1px;
-  border-color: rgb(162, 162, 251);
   width: 100%;
 }
 
@@ -29,13 +27,14 @@ th {
 }
 
 .tittles {
-  width: 80%;
+  width: 74%;
   display: flex;
   justify-content: space-around;
 }
 
 .tittleHeader {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 5px;
+}
+.type {
+  width: 6%;
 }

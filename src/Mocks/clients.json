@@ -9,6 +9,7 @@
       "boilerC": "1",
       "boilerD": "3",
       "email": "compañia@system.com",
+      "type": "builder",
       "reminder": false,
       "id": 1
     },
@@ -21,6 +22,7 @@
       "boilerC": "1",
       "boilerD": "3",
       "email": "airoldi@repuestos.com",
+      "type": "builder",
       "reminder": false,
       "id": 2
     },
@@ -33,8 +35,61 @@
       "boilerC": "1",
       "boilerD": "3",
       "email": "marstech@computacion.com",
+      "type": "builder",
       "reminder": false,
       "id": 3
+    },
+    {
+      "company": "Marsstech ",
+      "address": "Mendoza 1421",
+      "phone": "4912806",
+      "boilerA": "4",
+      "boilerB": "0",
+      "boilerC": "1",
+      "boilerD": "3",
+      "email": "marstech@computacion.com",
+      "type": "construc",
+      "reminder": false,
+      "id": 5
+    },
+    {
+      "company": "Marsstech ",
+      "address": "Mendoza 1421",
+      "phone": "4912806",
+      "boilerA": "4",
+      "boilerB": "0",
+      "boilerC": "1",
+      "boilerD": "3",
+      "email": "marstech@computacion.com",
+      "type": "construc",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "company": "Marsstech ",
+      "address": "Mendoza 1421",
+      "phone": "4912806",
+      "boilerA": "4",
+      "boilerB": "0",
+      "boilerC": "1",
+      "boilerD": "3",
+      "email": "marstech@computacion.com",
+      "type": "builder",
+      "reminder": false,
+      "id": 7
+    },
+    {
+      "company": "Marsstech ",
+      "address": "Mendoza 1421",
+      "phone": "4912806",
+      "boilerA": "4",
+      "boilerB": "0",
+      "boilerC": "1",
+      "boilerD": "3",
+      "email": "marstech@computacion.com",
+      "type": "construc",
+      "reminder": false,
+      "id": 8
     }
   ]
 }
