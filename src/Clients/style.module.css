@@ -26,20 +26,37 @@ th {
   justify-content: space-around;
 }
 
-.tittles {
-  width: 74%;
+.contentBoilersForm {
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }
 
-.tittleHeader {
-  margin-bottom: 5px;
+.boilersForm {
+  width: 20%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.tittles {
+  width: 74%;
+  display: flex;
+  justify-content: space-around;
 }
 .type {
   width: 6%;
 }
 
 label {
-  margin-left: 15px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.typesForm {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.radio {
+  width: 300px;
 }

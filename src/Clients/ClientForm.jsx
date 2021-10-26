@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import styles from './style.module.css';
 export const ClientForm = (props) => {
   const { onSubmitForm, client } = props;
   const [company, setCompany] = useState(client ? client.company : '');
@@ -41,10 +41,10 @@ export const ClientForm = (props) => {
     setCompany(client ? client.company : '');
     setAddress(client ? client.address : '');
     setPhone(client ? client.phone : '');
-    setBoilerA(client ? client.boilerA : '');
-    setBoilerB(client ? client.boilerB : '');
-    setBoilerC(client ? client.boilerC : '');
-    setBoilerD(client ? client.boilerD : '');
+    setBoilerA(client ? client.boilerA : 0);
+    setBoilerB(client ? client.boilerB : 0);
+    setBoilerC(client ? client.boilerC : 0);
+    setBoilerD(client ? client.boilerD : 0);
     setEmail(client ? client.email : '');
     setType(client ? client.type : '');
   }, [client]);
@@ -82,54 +82,67 @@ export const ClientForm = (props) => {
         className='form-control mb-3'
         onChange={(e) => setEmail(e.target.value)}
         value={email}
-      />
-      <label>Builder </label>
-      <input
-        type='radio'
-        name='type'
-        value='builder'
-        onChange={(e) => setType(e.currentTarget.value)}
-      />
-      <label> Constructors </label>
-      <input
-        type='radio'
-        name='type'
-        value='construct'
-        onChange={(e) => setType(e.currentTarget.value)}
-      />
+      />{' '}
+      <div className={styles.typesForm}>
+        <h4>Builder </h4>
+        <input
+          type='radio'
+          name='type'
+          value='builder'
+          className={styles.radio}
+          onChange={(e) => setType(e.currentTarget.value)}
+        />
+        <h4> Constructors </h4>{' '}
+        <input
+          type='radio'
+          name='type'
+          value='construct'
+          className={styles.radio}
+          onChange={(e) => setType(e.currentTarget.value)}
+        />
+      </div>
+      <div>
+        <h4>Boilers Types</h4>
+        <div className={styles.contentBoilersForm}>
+          <label>A</label>
+          <input
+            type='number'
+            name='boilerA'
+            placeholder='boiler A'
+            className={styles.boilersForm}
+            onChange={(e) => setBoilerA(e.target.value)}
+            value={boilerA}
+          />
 
-      <input
-        type='number'
-        name='boilerA'
-        placeholder='boiler A'
-        className='form-control mb-3'
-        onChange={(e) => setBoilerA(e.target.value)}
-        value={boilerA}
-      />
-      <input
-        type='number'
-        name='boilerB'
-        placeholder='boiler B'
-        className='form-control mb-3'
-        onChange={(e) => setBoilerB(e.target.value)}
-        value={boilerB}
-      />
-      <input
-        type='number'
-        name='boilerC'
-        placeholder='boiler C'
-        className='form-control mb-3'
-        onChange={(e) => setBoilerC(e.target.value)}
-        value={boilerC}
-      />
-      <input
-        type='number'
-        name='boilerD'
-        placeholder='boiler D'
-        className='form-control mb-3'
-        onChange={(e) => setBoilerD(e.target.value)}
-        value={boilerD}
-      />
+          <label>B</label>
+          <input
+            type='number'
+            name='boilerB'
+            placeholder='boiler B'
+            className={styles.boilersForm}
+            onChange={(e) => setBoilerB(e.target.value)}
+            value={boilerB}
+          />
+          <label>C</label>
+          <input
+            type='number'
+            name='boilerC'
+            placeholder='boiler C'
+            className={styles.boilersForm}
+            onChange={(e) => setBoilerC(e.target.value)}
+            value={boilerC}
+          />
+          <label>D</label>
+          <input
+            type='number'
+            name='boilerD'
+            placeholder='boiler D'
+            className={styles.boilersForm}
+            onChange={(e) => setBoilerD(e.target.value)}
+            value={boilerD}
+          />
+        </div>
+      </div>
       <button className='btn btn-success' type='submit'>
         Confirm
       </button>

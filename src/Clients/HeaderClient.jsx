@@ -12,7 +12,7 @@ export const HeaderClient = (props) => {
     onEditClient
   } = props;
   return (
-    <div className={styles.tittleHeader}>
+    <div>
       <h1>Clients</h1>
       <button
         className='btn btn-primary'
