@@ -1,7 +1,24 @@
-[{"id":1,"nombre":"Ophelie","telefono":"5661374738","tipo":"A","estado":"Asignado","mantenimiento":"Eventual","correo":"ogrestye0@wiley.com", "bool": false},
-{"id":2,"nombre":"Noelani","telefono":"6988424780","tipo":"B","estado":"Asignado","mantenimiento":"Eventual","correo":"ngatcliff1@amazon.com", "bool": false},
-{"id":3,"nombre":"Analiese","telefono":"2329575447","tipo":"D","estado":"Asignar","mantenimiento":"Mensual","correo":"aburchatt2@reuters.com", "bool": false},
-{"id":4,"nombre":"Eddi","telefono":"1639534795","tipo":"D","estado":"Asignado","mantenimiento":"Eventual","correo":"epengelley3@imageshack.us", "bool": false},
-{"id":5,"nombre":"Lauree","telefono":"8694251569","tipo":"A","estado":"Asignar","mantenimiento":"Eventual","correo":"lmewe4@hexun.com", "bool": false},
-{"id":6,"nombre":"Mikael","telefono":"3043221819","tipo":"A","estado":" Asignar","mantenimiento":"Mensual","correo":"mallerton5@paginegialle.it", "bool": false},
-{"id":7,"nombre":"Kristian","telefono":"6647534921","tipo":"B","estado":"Asignado","mantenimiento":"Eventual","correo":"krickaby6@com.com", "bool": false}]
+{
+"technicians":[
+{
+    "id":1,"name":"Ophelie","telephone":"5661374738","type":"A","state":"Asignado","maintenance":"Eventual","mail":"ogrestye0@wiley.com", "bool": false
+},
+{
+    "id":2,"name":"Noelani","telephone":"6988424780","type":"B","state":"Asignado","maintenance":"Eventual","mail":"ngatcliff1@amazon.com", "bool": false
+},
+{
+    "id":3,"name":"Analiese","telephone":"2329575447","type":"D","state":"Asignar","maintenance":"Mensual","mail":"aburchatt2@reuters.com", "bool": false
+},
+{
+    "id":4,"name":"Eddi","telephone":"1639534795","type":"D","state":"Asignado","maintenance":"Eventual","mail":"epengelley3@imageshack.us", "bool": false
+},
+{
+    "id":5,"name":"Lauree","telephone":"8694251569","type":"A","state":"Asignar","maintenance":"Eventual","mail":"lmewe4@hexun.com", "bool": false
+},
+{
+    "id":6,"name":"Mikael","telephone":"3043221819","type":"A","state":" Asignar","maintenance":"Mensual","mail":"mallerton5@paginegialle.it", "bool": false
+},
+{
+    "id":7,"name":"Kristian","telephone":"6647534921","type":"B","state":"Asignado","maintenance":"Eventual","mail":"krickaby6@com.com", "bool": false
+}
+]}
