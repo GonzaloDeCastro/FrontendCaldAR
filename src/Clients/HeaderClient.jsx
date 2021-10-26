@@ -1,6 +1,7 @@
 import React from 'react';
 import { AddClient } from './AddClient';
 import { EditClient } from './EditClient';
+import styles from './style.module.css';
 
 export const HeaderClient = (props) => {
   const {
@@ -11,7 +12,7 @@ export const HeaderClient = (props) => {
     onEditClient
   } = props;
   return (
-    <div>
+    <div className={styles.tittleHeader}>
       <h1>Clients</h1>
       <button
         className='btn btn-primary'

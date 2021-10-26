@@ -11,11 +11,31 @@ tr {
 
 td,
 th {
-  width: 100%;
   padding: 5px 0px 5px 5px;
+  border: solid 1px;
+  border-color: rgb(162, 162, 251);
+  width: 100%;
 }
 
 .icon {
   cursor: pointer;
   color: rgb(23, 87, 23);
+}
+
+.boilers {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittles {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittleHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }

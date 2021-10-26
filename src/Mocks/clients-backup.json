@@ -4,10 +4,14 @@
       "company": "Compañia System ",
       "address": "Corrientes 1240",
       "phone": "426332",
-      "boilerA": "4",
-      "boilerB": "0",
-      "boilerC": "1",
-      "boilerD": "3",
+      "boilers": [
+        {
+          "boilerA": "4",
+          "boilerB": "0",
+          "boilerC": "1",
+          "boilerD": "3"
+        }
+      ],
       "email": "compañia@system.com",
       "reminder": false,
       "id": 1
@@ -16,10 +20,14 @@
       "company": "Airoldi",
       "address": "Alsina 1542",
       "phone": "4780552",
-      "boilerA": "3",
-      "boilerB": "0",
-      "boilerC": "1",
-      "boilerD": "3",
+      "boilers": [
+        {
+          "boilerA": "4",
+          "boilerB": "0",
+          "boilerC": "1",
+          "boilerD": "3"
+        }
+      ],
       "email": "airoldi@repuestos.com",
       "reminder": false,
       "id": 2
@@ -28,10 +36,15 @@
       "company": "Marsstech ",
       "address": "Mendoza 1421",
       "phone": "4912806",
-      "boilerA": "4",
-      "boilerB": "0",
-      "boilerC": "1",
-      "boilerD": "3",
+      "boilers": [
+        {
+          "boilerA": "4",
+          "boilerB": "0",
+          "boilerC": "1",
+          "boilerD": "3"
+        }
+      ],
+
       "email": "marstech@computacion.com",
       "reminder": false,
       "id": 3
