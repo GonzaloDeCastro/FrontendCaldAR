@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  FaTrash as DeleteIcon,
-  FaPen as EditIcon,
-  FaUserTimes as DeleteUser,
-  FaUserEdit
-} from 'react-icons/fa';
+import { FaTrash as DeleteIcon, FaPen as EditIcon } from 'react-icons/fa';
 import styles from './style.module.css';
 export const ClientItem = (props) => {
   const { clientToShow, onDelete, onEdit } = props;
