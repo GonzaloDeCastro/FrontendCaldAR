@@ -1,16 +1,21 @@
-.hola {
+table {
+  width: 100%;
+  background-color: white;
+}
+tr {
   display: flex;
-  background-color: whitesmoke;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px;
 }
 
-.hola p {
-  font-weight: bold;
-  padding-left: 10px;
+td,
+th {
+  width: 100%;
+  padding: 5px 0px 5px 5px;
 }
 
-.hola .icon {
-  font-size: xx-large;
-  color: rgb(25, 93, 25);
+.icon {
   cursor: pointer;
-  padding-left: 10px;
+  color: rgb(23, 87, 23);
 }
