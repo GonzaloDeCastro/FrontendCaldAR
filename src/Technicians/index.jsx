@@ -1,17 +1,8 @@
 import React from 'react';
-import { Fragment } from 'react/cjs/react.production.min';
 
 const Tenchnicians = () => {
-  return (
-    <Fragment>
-      <h1>Hola</h1>
-      <h1>Hola</h1>
-      <h1>Hola</h1>
-      <h1>Hola</h1>
-      <h1>Hola</h1>
-      <h1>Hola</h1>
-    </Fragment>
-  );
+
+  return <div></div>
 };
 
 export default Tenchnicians;
