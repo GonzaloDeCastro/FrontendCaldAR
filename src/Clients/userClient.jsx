@@ -18,16 +18,18 @@ export const ClientItem = (props) => {
             <th scope='col'>Phone</th>
             <th scope='col'>Email</th>
           </div>
+          <div className={styles.type}>
+            <th scope='col'>Type</th>
+          </div>
           <div className={styles.boilers}>
-            <td className={styles.boilers}>A </td>
-            <td className={styles.boilers}>B </td>
-            <td className={styles.boilers}>C </td>
-            <td className={styles.boilers}>D </td>
-
-            <td className={styles.boilers}>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>
               <FaUserEdit />
             </td>
-            <td className={styles.boilers}>
+            <td>
               <DeleteUser />
             </td>
           </div>
@@ -41,20 +43,21 @@ export const ClientItem = (props) => {
             <td>{clientToShow.phone}</td>
             <td>{clientToShow.email}</td>
           </div>
+          <div className={styles.type}>
+            <td>{clientToShow.type}</td>
+          </div>
           <div className={styles.boilers}>
-            <td className={styles.boilers}>{clientToShow.boilerA}</td>
-            <td className={styles.boilers}>{clientToShow.boilerB}</td>
-            <td className={styles.boilers}>{clientToShow.boilerC}</td>
-            <td className={styles.boilers}>{clientToShow.boilerD}</td>
-
-            <td className={styles.boilers}>
+            <td>{clientToShow.boilerA}</td>
+            <td>{clientToShow.boilerB}</td>
+            <td>{clientToShow.boilerC}</td>
+            <td>{clientToShow.boilerD}</td>
+            <td>
               <EditIcon
                 onClick={() => onEdit(clientToShow)}
                 className={styles.icon}
               />
             </td>
-            <td className={styles.boilers}>
-              {' '}
+            <td>
               <DeleteIcon
                 onClick={() => onDelete(clientToShow.id)}
                 className={styles.icon}

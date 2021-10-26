@@ -5,11 +5,12 @@ export const ClientForm = (props) => {
   const [company, setCompany] = useState(client ? client.company : '');
   const [address, setAddress] = useState(client ? client.address : '');
   const [phone, setPhone] = useState(client ? client.phone : '');
+  const [email, setEmail] = useState(client ? client.email : '');
+  const [type, setType] = useState(client ? client.type : '');
   const [boilerA, setBoilerA] = useState(client ? client.boilerA : '');
   const [boilerB, setBoilerB] = useState(client ? client.boilerB : '');
   const [boilerC, setBoilerC] = useState(client ? client.boilerC : '');
   const [boilerD, setBoilerD] = useState(client ? client.boilerD : '');
-  const [email, setEmail] = useState(client ? client.email : '');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,16 +23,18 @@ export const ClientForm = (props) => {
       boilerB,
       boilerC,
       boilerD,
-      email
+      email,
+      type
     });
     setCompany('');
     setAddress('');
     setPhone('');
+    setEmail('');
+    setType('');
     setBoilerA('');
     setBoilerB('');
     setBoilerC('');
     setBoilerD('');
-    setEmail('');
   };
 
   useEffect(() => {
@@ -43,6 +46,7 @@ export const ClientForm = (props) => {
     setBoilerC(client ? client.boilerC : '');
     setBoilerD(client ? client.boilerD : '');
     setEmail(client ? client.email : '');
+    setType(client ? client.type : '');
   }, [client]);
 
   return (
@@ -70,6 +74,22 @@ export const ClientForm = (props) => {
         className='form-control mb-3'
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
+      />
+      <input
+        type='text'
+        name='email'
+        placeholder='email'
+        className='form-control mb-3'
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
+      />
+      <input
+        type='text'
+        name='type'
+        placeholder='type'
+        className='form-control mb-3'
+        onChange={(e) => setType(e.target.value)}
+        value={type}
       />
       <input
         type='number'
@@ -103,15 +123,9 @@ export const ClientForm = (props) => {
         onChange={(e) => setBoilerD(e.target.value)}
         value={boilerD}
       />
-      <input
-        type='text'
-        name='email'
-        placeholder='email'
-        className='form-control mb-3'
-        onChange={(e) => setEmail(e.target.value)}
-        value={email}
-      />
-      <button type='submit'>Confirm</button>
+      <button className='btn btn-success' type='submit'>
+        Confirm
+      </button>
     </form>
   );
 };
