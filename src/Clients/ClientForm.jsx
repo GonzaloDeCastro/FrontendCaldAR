@@ -30,7 +30,7 @@ export const ClientForm = (props) => {
       <input
         type='text'
         company='company'
-        placeholder='Name'
+        placeholder='Company'
         className='form-control mb-3'
         onChange={(e) => setCompany(e.target.value)}
         value={company}

@@ -19,22 +19,13 @@
       "id": 2
     },
     {
-      "company": "Compañia Argentina System ",
-      "address": "Corrientes 1240",
-      "phone": "426332",
+      "company": "Marsstech ",
+      "address": "Mendoza 1421",
+      "phone": "4912806",
       "boilerA": "4",
-      "email": "compañia@argentinasystem.com",
+      "email": "marstech@computacion.com",
       "reminder": false,
-      "id": 1
-    },
-    {
-      "company": "Airoldi",
-      "address": "Alsina 1542",
-      "phone": "4780552",
-      "boilerA": "3",
-      "email": "airoldi@repuestos.com",
-      "reminder": false,
-      "id": 2
+      "id": 3
     }
   ]
 }

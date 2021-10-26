@@ -1,0 +1,16 @@
+.hola {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.hola p {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.hola .icon {
+  font-size: xx-large;
+  color: rgb(25, 93, 25);
+  cursor: pointer;
+  padding-left: 10px;
+}
