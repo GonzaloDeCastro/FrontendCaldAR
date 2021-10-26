@@ -38,3 +38,8 @@ th {
 .type {
   width: 6%;
 }
+
+label {
+  margin-left: 15px;
+  font-weight: bold;
+}

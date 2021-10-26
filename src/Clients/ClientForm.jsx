@@ -83,14 +83,21 @@ export const ClientForm = (props) => {
         onChange={(e) => setEmail(e.target.value)}
         value={email}
       />
+      <label>Builder </label>
       <input
-        type='text'
+        type='radio'
         name='type'
-        placeholder='type'
-        className='form-control mb-3'
-        onChange={(e) => setType(e.target.value)}
-        value={type}
+        value='builder'
+        onChange={(e) => setType(e.currentTarget.value)}
       />
+      <label> Constructors </label>
+      <input
+        type='radio'
+        name='type'
+        value='construct'
+        onChange={(e) => setType(e.currentTarget.value)}
+      />
+
       <input
         type='number'
         name='boilerA'
