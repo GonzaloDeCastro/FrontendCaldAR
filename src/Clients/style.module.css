@@ -1,16 +1,41 @@
-.hola {
+table {
+  width: 100%;
+  background-color: white;
+}
+tr {
   display: flex;
-  background-color: whitesmoke;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px;
 }
 
-.hola p {
-  font-weight: bold;
-  padding-left: 10px;
+td,
+th {
+  padding: 5px 0px 5px 5px;
+  border: solid 1px;
+  border-color: rgb(162, 162, 251);
+  width: 100%;
 }
 
-.hola .icon {
-  font-size: xx-large;
-  color: rgb(25, 93, 25);
+.icon {
   cursor: pointer;
-  padding-left: 10px;
+  color: rgb(23, 87, 23);
+}
+
+.boilers {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittles {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittleHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
