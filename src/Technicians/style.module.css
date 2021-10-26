@@ -1,0 +1,40 @@
+table {
+  width: 100%;
+  background-color: white;
+}
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px;
+}
+
+td,
+th {
+  padding: 5px 0px 5px 5px;
+  width: 100%;
+}
+
+.icon {
+  cursor: pointer;
+  color: rgb(23, 87, 23);
+}
+
+.boilers {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittles {
+  width: 74%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tittleHeader {
+  margin-bottom: 5px;
+}
+.type {
+  width: 6%;
+}
