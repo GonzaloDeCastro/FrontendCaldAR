@@ -1,12 +1,7 @@
 import React from 'react';
 import { ClientItem } from './userClient';
 import styles from './style.module.css';
-import {
-  FaTrash as DeleteIcon,
-  FaPen as EditIcon,
-  FaUserTimes as DeleteUser,
-  FaUserEdit
-} from 'react-icons/fa';
+import { FaUserTimes as DeleteUser, FaUserEdit } from 'react-icons/fa';
 
 export const ClientsList = (props) => {
   const { clientList, onDelete, onEdit } = props;
@@ -37,7 +32,6 @@ export const ClientsList = (props) => {
             </td>
           </div>
         </tr>
-
         {clientList.map((client) => (
           <ClientItem
             key={client.id}

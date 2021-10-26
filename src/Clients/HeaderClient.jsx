@@ -12,7 +12,7 @@ export const HeaderClient = (props) => {
     onEditClient
   } = props;
   return (
-    <div>
+    <div className={styles.tittleHeader}>
       <h1>Clients</h1>
       <button
         className='btn btn-primary'
@@ -22,7 +22,6 @@ export const HeaderClient = (props) => {
       >
         {showClientForm.show ? 'Cancel' : 'Add Client'}
       </button>
-
       {showClientForm.show ? (
         showClientForm.mode === 'Add' ? (
           <AddClient onAddClient={onAddClient} />

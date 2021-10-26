@@ -78,7 +78,7 @@ export const ClientForm = (props) => {
       <input
         type='text'
         name='email'
-        placeholder='email'
+        placeholder='Email'
         className='form-control mb-3'
         onChange={(e) => setEmail(e.target.value)}
         value={email}
