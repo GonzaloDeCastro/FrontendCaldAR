@@ -3,7 +3,7 @@ import {
   FaTrash as DeleteIcon,
   FaPen as EditIcon
 } from 'react-icons/fa';
-import styles from './style.module.css';
+
 
 export const TechnicianItem = (props) => {
   const { technicianToShow, onDelete, onEdit } = props;
@@ -18,13 +18,11 @@ export const TechnicianItem = (props) => {
         <td>
           <EditIcon
             onClick={() => onEdit(technicianToShow)}
-            className={styles.icon}
           />
         </td>
         <td>
           <DeleteIcon
             onClick={() => onDelete(technicianToShow.id)}
-            className={styles.icon}
           />
         </td>
       </tr>
