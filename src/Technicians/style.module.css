@@ -1,4 +1,5 @@
-body{
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -48,6 +49,7 @@ td {
   text-align: center;
 }
 
+
 tr:nth-child(even){
   background-color: #b2f0fa;
 }
@@ -55,3 +57,4 @@ tr:nth-child(even){
 tr:hover td{
   background-color: #1de0ff;
 }
+

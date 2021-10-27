@@ -1,6 +1,7 @@
 import React from 'react';
 import { AddTechnician } from './AddTechnician';
-import { EditTechnician} from './EditTechnician';
+
+import { EditTechnician } from './EditTechnician';
 import styles from './style.module.css';
 
 export const HeaderTechnician = (props) => {
@@ -27,9 +28,13 @@ export const HeaderTechnician = (props) => {
         showTechnicianForm.mode === 'Add' ? (
           <AddTechnician onAddTechnician={onAddTechnician} />
         ) : (
-          <EditTechnician onEditTechnician={onEditTechnician} technicianToEdit={technicianToEdit} />
+          <EditTechnician
+            onEditTechnician={onEditTechnician}
+            technicianToEdit={technicianToEdit}
+          />
         )
       ) : undefined}
     </div>
   );
 };
+

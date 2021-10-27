@@ -3,12 +3,20 @@ import React, { useEffect, useState } from 'react';
 export const TechnicianForm = (props) => {
   const { onSubmitForm, technician } = props;
   const [name, setName] = useState(technician ? technician.name : '');
+  const [telephone, setTelephone] = useState(
+    technician ? technician.telephone : ''
+  );
+  const [type, setType] = useState(technician ? technician.type : '');
+  const [state, setState] = useState(technician ? technician.state : '');
+  const [maintenance, setMaintenance] = useState(
+    technician ? technician.maintenance : ''
+  );
+  const [mail, setMail] = useState(technician ? technician.mail : '');
   const [telephone, setTelephone] = useState(technician ? technician.telephone : '');
   const [type, setType] = useState(technician ? technician.type : '');
   const [state, setState] = useState(technician ? technician.state : '');
   const [maintenance, setMaintenance] = useState(technician ? technician.maintenance : '');
   const [mail, setMail] = useState(technician ? technician.mail : '');
-  
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmitForm({
@@ -90,6 +98,7 @@ export const TechnicianForm = (props) => {
       <button className='btn btn-success' type='submit'>
         Confirm
       </button>
-  </form>
+    </form>
   );
 };
+

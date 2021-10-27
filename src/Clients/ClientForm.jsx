@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './style.module.css';
+import clients from './clients.module.css';
 export const ClientForm = (props) => {
   const { onSubmitForm, client } = props;
   const [company, setCompany] = useState(client ? client.company : '');
@@ -83,13 +83,13 @@ export const ClientForm = (props) => {
         onChange={(e) => setEmail(e.target.value)}
         value={email}
       />{' '}
-      <div className={styles.typesForm}>
+      <div className={clients.typesForm}>
         <h4>Builder </h4>
         <input
           type='radio'
           name='type'
           value='builder'
-          className={styles.radio}
+          className={clients.radio}
           onChange={(e) => setType(e.currentTarget.value)}
         />
         <h4> Constructors </h4>{' '}
@@ -97,19 +97,19 @@ export const ClientForm = (props) => {
           type='radio'
           name='type'
           value='construct'
-          className={styles.radio}
+          className={clients.radio}
           onChange={(e) => setType(e.currentTarget.value)}
         />
       </div>
       <div>
         <h4>Boilers Types</h4>
-        <div className={styles.contentBoilersForm}>
+        <div className={clients.contentBoilersForm}>
           <label>A</label>
           <input
             type='number'
             name='boilerA'
             placeholder='boiler A'
-            className={styles.boilersForm}
+            className={clients.boilersForm}
             onChange={(e) => setBoilerA(e.target.value)}
             value={boilerA}
           />
@@ -119,7 +119,7 @@ export const ClientForm = (props) => {
             type='number'
             name='boilerB'
             placeholder='boiler B'
-            className={styles.boilersForm}
+            className={clients.boilersForm}
             onChange={(e) => setBoilerB(e.target.value)}
             value={boilerB}
           />
@@ -128,7 +128,7 @@ export const ClientForm = (props) => {
             type='number'
             name='boilerC'
             placeholder='boiler C'
-            className={styles.boilersForm}
+            className={clients.boilersForm}
             onChange={(e) => setBoilerC(e.target.value)}
             value={boilerC}
           />
@@ -137,7 +137,7 @@ export const ClientForm = (props) => {
             type='number'
             name='boilerD'
             placeholder='boiler D'
-            className={styles.boilersForm}
+            className={clients.boilersForm}
             onChange={(e) => setBoilerD(e.target.value)}
             value={boilerD}
           />

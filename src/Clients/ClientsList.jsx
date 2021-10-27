@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClientItem } from './userClient';
-import styles from './style.module.css';
+import clients from './clients.module.css';
 import { FaUserTimes as DeleteUser, FaUserEdit } from 'react-icons/fa';
 
 export const ClientsList = (props) => {
@@ -10,16 +10,16 @@ export const ClientsList = (props) => {
       {' '}
       <table>
         <tr>
-          <div className={styles.tittles}>
+          <div className={clients.tittles}>
             <th scope='col'>Company</th>
             <th scope='col'>Address</th>
             <th scope='col'>Phone</th>
             <th scope='col'>Email</th>
           </div>
-          <div className={styles.type}>
+          <div className={clients.type}>
             <th scope='col'>Type</th>
           </div>
-          <div className={styles.boilers}>
+          <div className={clients.boilers}>
             <td>A</td>
             <td>B</td>
             <td>C</td>

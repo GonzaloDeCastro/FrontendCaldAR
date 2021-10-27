@@ -1,13 +1,12 @@
 import React from 'react';
-import {
-  FaTrash as DeleteIcon,
-  FaPen as EditIcon
-} from 'react-icons/fa';
+
+import { FaTrash as DeleteIcon, FaPen as EditIcon } from 'react-icons/fa';
 
 
 export const TechnicianItem = (props) => {
   const { technicianToShow, onDelete, onEdit } = props;
   return (
+
       <tr>
         <td>{technicianToShow.name}</td>
         <td>{technicianToShow.telephone}</td>
@@ -28,4 +27,3 @@ export const TechnicianItem = (props) => {
       </tr>
   );
 };
-
