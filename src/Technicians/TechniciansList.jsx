@@ -10,6 +10,8 @@ export const TechnicianList = (props) => {
   return (
     <div>
       <table>
+        <caption>List of technicians</caption>
+        <thead>
           <tr>
             <th scope='col'>Name</th>
             <th scope='col'>Telephone</th>
@@ -24,6 +26,8 @@ export const TechnicianList = (props) => {
               <DeleteUser />
             </th>
           </tr>
+        </thead>
+        <tbody>
           {technicianList.map((technician) => (
             <TechnicianItem
               key={technician.id}
@@ -32,9 +36,9 @@ export const TechnicianList = (props) => {
               onEdit={onEdit}
             />
           ))}
+        </tbody>
       </table>
     </div>
-
   );
 };
 
