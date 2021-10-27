@@ -2,6 +2,7 @@ import React from 'react';
 import { TechnicianItem } from './userTechnician';
 import { FaUserTimes as DeleteUser, FaUserEdit } from 'react-icons/fa';
 
+
 export const TechnicianList = (props) => {
   const { technicianList, onDelete, onEdit } = props;
   return (
