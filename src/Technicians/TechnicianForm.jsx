@@ -12,11 +12,7 @@ export const TechnicianForm = (props) => {
     technician ? technician.maintenance : ''
   );
   const [mail, setMail] = useState(technician ? technician.mail : '');
-  const [telephone, setTelephone] = useState(technician ? technician.telephone : '');
-  const [type, setType] = useState(technician ? technician.type : '');
-  const [state, setState] = useState(technician ? technician.state : '');
-  const [maintenance, setMaintenance] = useState(technician ? technician.maintenance : '');
-  const [mail, setMail] = useState(technician ? technician.mail : '');
+
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmitForm({
@@ -46,7 +42,7 @@ export const TechnicianForm = (props) => {
   }, [technician]);
 
   return (
-  <form onSubmit={handleSubmit} className='mt-3'>
+    <form onSubmit={handleSubmit} className='mt-3'>
       <input
         type='text'
         name='name'
@@ -101,4 +97,3 @@ export const TechnicianForm = (props) => {
     </form>
   );
 };
-
