@@ -1,0 +1,74 @@
+{
+  "boilers": [
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 1
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 2
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 3
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 4
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 5
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 6
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 7
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 8
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 9
+    },
+    {
+      "type": "A",
+      "stock": "5",
+      "state": "installed",
+      "maintenance": "Eventual",
+      "id": 10
+    }
+  ]
+}
