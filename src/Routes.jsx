@@ -5,36 +5,20 @@ import Boilers from './Boilers';
 import Tenchnicians from './Technicians';
 import Clients from './Clients';
 import Reports from './Reports';
+import TodoList from './TodoList/TodoList';
 
 const Routes = () => {
   return (
     <Switch>
-      <Redirect exact push from='/' to='/maintenances' />
-      <Route path='/maintenances'>
-        <Layout>
-          <Maintenances />
-        </Layout>
-      </Route>
-      <Route path='/boilers'>
-        <Layout>
-          <Boilers />
-        </Layout>
-      </Route>
-      <Route path='/technicians'>
-        <Layout>
-          <Tenchnicians />
-        </Layout>
-      </Route>
-      <Route path='/clients'>
-        <Layout>
-          <Clients />
-        </Layout>
-      </Route>
-      <Route path='/reports'>
-        <Layout>
-          <Reports />
-        </Layout>
-      </Route>
+      <Layout>
+        <Redirect exact push from='/' to='/maintenances' />
+        <Route path='/maintenances' component={Maintenances} />
+        <Route path='/boilers' component={Boilers} />
+        <Route path='/technicians' component={Tenchnicians} />
+        <Route path='/clients' component={Clients} />
+        <Route path='/reports' component={Reports} />
+        <Route path='/todolist' component={TodoList} />
+      </Layout>
     </Switch>
   );
 };
