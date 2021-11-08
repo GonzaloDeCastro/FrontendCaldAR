@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import Routes from './Routes';
-import allReducers from './TodoList/reducers';
+import allReducers from './Counter/reducers';
 
 const store = createStore(
   allReducers,

@@ -11,7 +11,7 @@ const LeftNav = () => {
         <Link to='/technicians'>Technicians</Link>
         <Link to='/clients'>Clients</Link>
         <Link to='/reports'>Reports</Link>
-        <Link to='/todolist'>TodoList</Link>
+        <Link to='/counter'>Counter</Link>
       </div>
     </Fragment>
   );

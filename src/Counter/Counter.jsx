@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './actions';
 
-const TodoList = () => {
+const Counter = () => {
   const counter = useSelector((state) => state.counter);
   const isLogged = useSelector((state) => state.isLogged);
   const dispatch = useDispatch();
@@ -16,4 +16,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default Counter;
