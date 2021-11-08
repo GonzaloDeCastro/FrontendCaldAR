@@ -5,6 +5,7 @@ import Boilers from './Boilers';
 import Tenchnicians from './Technicians';
 import Clients from './Clients';
 import Reports from './Reports';
+import TodoList from './TodoList/TodoList';
 
 const Routes = () => {
   return (
@@ -12,14 +13,11 @@ const Routes = () => {
       <Layout>
         <Redirect exact push from='/' to='/maintenances' />
         <Route path='/maintenances' component={Maintenances} />
-
         <Route path='/boilers' component={Boilers} />
-
         <Route path='/technicians' component={Tenchnicians} />
-
         <Route path='/clients' component={Clients} />
-
         <Route path='/reports' component={Reports} />
+        <Route path='/todolist' component={TodoList} />
       </Layout>
     </Switch>
   );
